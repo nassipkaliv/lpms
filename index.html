@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Главная</title>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-logo">
+        <img src="https://static.tildacdn.com/tild3966-3235-4230-a437-643031663161/lpms_logo_white-2048.png" alt="logo">
+      </div>
+      <div class="header-right">
+        <a href="tel:+78124256988" class="header-link">
+          <img src="https://static.tildacdn.com/lib/icons/tilda/-/paint/--1-0-70/phone_contact_call.svg" alt="Позвонить">
+          +7 (812) 425-69-88
+        </a>
+        <a href="mailto:sales@lpms.ru" class="header-link">
+          <img src="https://static.tildacdn.com/lib/icons/tilda/-/paint/--1-0-70/envelope_e-mail_mail_post_contact_send.svg" alt="Написать письмо">
+          sales@lpms.ru
+        </a>
+        <button class="zayavka-btn">
+          Оставить заявку
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="intro">
+    <div class="swiper intro-swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="intro-slide" style="background-image: url('https://static.tildacdn.com/tild6562-3035-4131-b162-663762653165/photo.png');">
+            <div class="intro-content">
+              <h1><span class="highlight">Формование</span> под низким давлением</h1>
+              <p>Гибкое проектирование, точное изготовление сложных и нестандартных форм. LPM превосходит традиционные технологии заливки по форме, размерам и функциональности готовых изделий</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="intro-slide" style="background-image: url('https://static.tildacdn.com/tild6562-3035-4131-b162-663762653165/photo.png');">
+            <div class="intro-content">
+              <h1><span class="highlight">Технологии</span> будущего</h1>
+              <p>Современное оборудование и инновационные решения для производства высококачественных изделий любой сложности</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="intro-slide" style="background-image: url('https://static.tildacdn.com/tild6562-3035-4131-b162-663762653165/photo.png');">
+            <div class="intro-content">
+              <h1><span class="highlight">Качество</span> и надёжность</h1>
+              <p>Гарантируем высокое качество продукции и долгосрочное сотрудничество с нашими клиентами</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const introSwiper = new Swiper('.intro-swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+</html>
