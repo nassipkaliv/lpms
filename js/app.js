@@ -46,3 +46,17 @@ const overmoldingSwiper = new Swiper('.overmolding-swiper', {
     disableOnInteraction: false,
   },
 });
+
+// Difference Slider
+const differenceSwiper = new Swiper('.difference-swiper', {
+  loop: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.difference-next',
+    prevEl: '.difference-prev',
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+});
